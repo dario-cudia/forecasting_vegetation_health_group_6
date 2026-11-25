@@ -1,0 +1,81 @@
+{
+  "area": "30UUA",
+  "feature_names": [
+    "wind",
+    "humidity",
+    "solar_irradiance",
+    "rainfall",
+    "pressure",
+    "avg_temperature",
+    "min_temperature",
+    "max_temperature",
+    "thick_clouds",
+    "thin_clouds",
+    "clouds_shadows",
+    "day_of_year",
+    "day_of_year_fourier_sin_1",
+    "day_of_year_fourier_cos_1",
+    "day_of_year_fourier_sin_2",
+    "day_of_year_fourier_cos_2",
+    "day_of_year_fourier_sin_3",
+    "day_of_year_fourier_cos_3",
+    "target_history_avg_NDVI_clear_sky",
+    "target_history_avg_GNDVI_clear_sky",
+    "target_history_avg_EVI_clear_sky"
+  ],
+  "target_names": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "target_column": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "history_window": 3,
+  "forecast_window": 3,
+  "step": 4,
+  "noise_percentage": 0.1,
+  "scaler_mode": "standardization_arcsinh",
+  "min_samples_per_month": 100,
+  "g5_target": 2.0,
+  "metadata_records": [
+    {
+      "area": "30UUA",
+      "csv": "30UUA_2019-02-10_2019-07-09_57_185_2873_3001_0_80_44_124.csv",
+      "history_start": "2019-02-14T00:00:00.000000000",
+      "history_end": "2019-03-01T00:00:00.000000000",
+      "future_start": "2019-03-06T00:00:00.000000000",
+      "future_end": "2019-03-26T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "30UUA",
+      "csv": "30UUA_2019-02-10_2019-07-09_57_185_2873_3001_0_80_44_124.csv",
+      "history_start": "2019-03-11T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-10T00:00:00.000000000",
+      "future_end": "2019-05-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "30UUA",
+      "csv": "30UUA_2019-02-10_2019-07-09_57_185_2873_3001_0_80_44_124.csv",
+      "history_start": "2019-04-20T00:00:00.000000000",
+      "history_end": "2019-05-10T00:00:00.000000000",
+      "future_start": "2019-05-15T00:00:00.000000000",
+      "future_end": "2019-05-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "30UUA",
+      "csv": "30UUA_2019-02-10_2019-07-09_57_185_2873_3001_0_80_44_124.csv",
+      "history_start": "2019-05-25T00:00:00.000000000",
+      "history_end": "2019-06-09T00:00:00.000000000",
+      "future_start": "2019-06-19T00:00:00.000000000",
+      "future_end": "2019-07-09T00:00:00.000000000",
+      "climate": "unknown"
+    }
+  ]
+}

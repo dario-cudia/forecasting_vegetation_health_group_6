@@ -1,0 +1,2340 @@
+{
+  "area": "43.75",
+  "feature_names": [
+    "wind",
+    "humidity",
+    "solar_irradiance",
+    "rainfall",
+    "pressure",
+    "avg_temperature",
+    "min_temperature",
+    "max_temperature",
+    "thick_clouds",
+    "thin_clouds",
+    "clouds_shadows",
+    "day_of_year",
+    "day_of_year_fourier_sin_1",
+    "day_of_year_fourier_cos_1",
+    "day_of_year_fourier_sin_2",
+    "day_of_year_fourier_cos_2",
+    "day_of_year_fourier_sin_3",
+    "day_of_year_fourier_cos_3",
+    "target_history_avg_NDVI_clear_sky",
+    "target_history_avg_GNDVI_clear_sky",
+    "target_history_avg_EVI_clear_sky"
+  ],
+  "target_names": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "target_column": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "history_window": 3,
+  "forecast_window": 3,
+  "step": 4,
+  "noise_percentage": 0.1,
+  "scaler_mode": "standardization_arcsinh",
+  "min_samples_per_month": 100,
+  "g5_target": 2.0,
+  "metadata_records": [
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2017-05-19T00:00:00.000000000",
+      "history_end": "2017-07-18T00:00:00.000000000",
+      "future_start": "2017-08-02T00:00:00.000000000",
+      "future_end": "2017-08-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-05-30T00:00:00.000000000",
+      "history_end": "2017-06-19T00:00:00.000000000",
+      "future_start": "2017-06-29T00:00:00.000000000",
+      "future_end": "2017-07-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-07-04T00:00:00.000000000",
+      "history_end": "2017-07-14T00:00:00.000000000",
+      "future_start": "2017-07-24T00:00:00.000000000",
+      "future_end": "2017-08-13T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-08-03T00:00:00.000000000",
+      "history_end": "2017-08-18T00:00:00.000000000",
+      "future_start": "2017-09-02T00:00:00.000000000",
+      "future_end": "2017-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-09-07T00:00:00.000000000",
+      "history_end": "2017-09-22T00:00:00.000000000",
+      "future_start": "2017-09-27T00:00:00.000000000",
+      "future_end": "2017-10-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-05-30T00:00:00.000000000",
+      "history_end": "2017-06-19T00:00:00.000000000",
+      "future_start": "2017-06-29T00:00:00.000000000",
+      "future_end": "2017-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-07-04T00:00:00.000000000",
+      "history_end": "2017-07-24T00:00:00.000000000",
+      "future_start": "2017-08-03T00:00:00.000000000",
+      "future_end": "2017-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-08-13T00:00:00.000000000",
+      "history_end": "2017-09-02T00:00:00.000000000",
+      "future_start": "2017-09-07T00:00:00.000000000",
+      "future_end": "2017-09-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-05-30T00:00:00.000000000",
+      "history_end": "2017-06-19T00:00:00.000000000",
+      "future_start": "2017-06-29T00:00:00.000000000",
+      "future_end": "2017-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-07-04T00:00:00.000000000",
+      "history_end": "2017-07-24T00:00:00.000000000",
+      "future_start": "2017-07-29T00:00:00.000000000",
+      "future_end": "2017-08-13T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-08-03T00:00:00.000000000",
+      "history_end": "2017-08-18T00:00:00.000000000",
+      "future_start": "2017-08-23T00:00:00.000000000",
+      "future_end": "2017-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-09-02T00:00:00.000000000",
+      "history_end": "2017-09-12T00:00:00.000000000",
+      "future_start": "2017-09-17T00:00:00.000000000",
+      "future_end": "2017-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-05-30T00:00:00.000000000",
+      "history_end": "2017-07-04T00:00:00.000000000",
+      "future_start": "2017-07-14T00:00:00.000000000",
+      "future_end": "2017-07-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-07-24T00:00:00.000000000",
+      "history_end": "2017-08-18T00:00:00.000000000",
+      "future_start": "2017-08-23T00:00:00.000000000",
+      "future_end": "2017-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-09-02T00:00:00.000000000",
+      "history_end": "2017-09-12T00:00:00.000000000",
+      "future_start": "2017-09-17T00:00:00.000000000",
+      "future_end": "2017-10-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-06-04T00:00:00.000000000",
+      "history_end": "2017-06-24T00:00:00.000000000",
+      "future_start": "2017-07-04T00:00:00.000000000",
+      "future_end": "2017-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-07-09T00:00:00.000000000",
+      "history_end": "2017-07-19T00:00:00.000000000",
+      "future_start": "2017-07-29T00:00:00.000000000",
+      "future_end": "2017-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-08-03T00:00:00.000000000",
+      "history_end": "2017-08-18T00:00:00.000000000",
+      "future_start": "2017-08-23T00:00:00.000000000",
+      "future_end": "2017-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-08-28T00:00:00.000000000",
+      "history_end": "2017-09-07T00:00:00.000000000",
+      "future_start": "2017-09-22T00:00:00.000000000",
+      "future_end": "2017-10-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-05-19T00:00:00.000000000",
+      "history_end": "2018-06-03T00:00:00.000000000",
+      "future_start": "2018-06-23T00:00:00.000000000",
+      "future_end": "2018-07-13T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-07-08T00:00:00.000000000",
+      "history_end": "2018-07-18T00:00:00.000000000",
+      "future_start": "2018-07-23T00:00:00.000000000",
+      "future_end": "2018-08-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-08-02T00:00:00.000000000",
+      "history_end": "2018-08-12T00:00:00.000000000",
+      "future_start": "2018-08-22T00:00:00.000000000",
+      "future_end": "2018-09-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-08-27T00:00:00.000000000",
+      "history_end": "2018-09-11T00:00:00.000000000",
+      "future_start": "2018-09-16T00:00:00.000000000",
+      "future_end": "2018-09-26T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-05-15T00:00:00.000000000",
+      "history_end": "2018-05-25T00:00:00.000000000",
+      "future_start": "2018-06-09T00:00:00.000000000",
+      "future_end": "2018-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-06-14T00:00:00.000000000",
+      "history_end": "2018-06-24T00:00:00.000000000",
+      "future_start": "2018-06-29T00:00:00.000000000",
+      "future_end": "2018-07-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-07-04T00:00:00.000000000",
+      "history_end": "2018-07-14T00:00:00.000000000",
+      "future_start": "2018-07-19T00:00:00.000000000",
+      "future_end": "2018-07-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-07-24T00:00:00.000000000",
+      "history_end": "2018-08-03T00:00:00.000000000",
+      "future_start": "2018-08-08T00:00:00.000000000",
+      "future_end": "2018-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-08-13T00:00:00.000000000",
+      "history_end": "2018-08-23T00:00:00.000000000",
+      "future_start": "2018-09-02T00:00:00.000000000",
+      "future_end": "2018-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-09-07T00:00:00.000000000",
+      "history_end": "2018-09-17T00:00:00.000000000",
+      "future_start": "2018-09-27T00:00:00.000000000",
+      "future_end": "2018-10-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-05-20T00:00:00.000000000",
+      "history_end": "2018-06-09T00:00:00.000000000",
+      "future_start": "2018-06-14T00:00:00.000000000",
+      "future_end": "2018-06-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-06-19T00:00:00.000000000",
+      "history_end": "2018-07-04T00:00:00.000000000",
+      "future_start": "2018-07-09T00:00:00.000000000",
+      "future_end": "2018-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-07-14T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-08-03T00:00:00.000000000",
+      "history_end": "2018-08-13T00:00:00.000000000",
+      "future_start": "2018-08-23T00:00:00.000000000",
+      "future_end": "2018-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-08-28T00:00:00.000000000",
+      "history_end": "2018-09-07T00:00:00.000000000",
+      "future_start": "2018-09-17T00:00:00.000000000",
+      "future_end": "2018-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-05-15T00:00:00.000000000",
+      "history_end": "2018-05-25T00:00:00.000000000",
+      "future_start": "2018-06-09T00:00:00.000000000",
+      "future_end": "2018-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-06-14T00:00:00.000000000",
+      "history_end": "2018-06-29T00:00:00.000000000",
+      "future_start": "2018-07-04T00:00:00.000000000",
+      "future_end": "2018-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-07-09T00:00:00.000000000",
+      "history_end": "2018-07-19T00:00:00.000000000",
+      "future_start": "2018-07-24T00:00:00.000000000",
+      "future_end": "2018-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-07-29T00:00:00.000000000",
+      "history_end": "2018-08-08T00:00:00.000000000",
+      "future_start": "2018-08-13T00:00:00.000000000",
+      "future_end": "2018-08-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-08-18T00:00:00.000000000",
+      "history_end": "2018-08-28T00:00:00.000000000",
+      "future_start": "2018-09-02T00:00:00.000000000",
+      "future_end": "2018-09-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-05-15T00:00:00.000000000",
+      "history_end": "2018-06-09T00:00:00.000000000",
+      "future_start": "2018-06-14T00:00:00.000000000",
+      "future_end": "2018-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-06-19T00:00:00.000000000",
+      "history_end": "2018-06-29T00:00:00.000000000",
+      "future_start": "2018-07-04T00:00:00.000000000",
+      "future_end": "2018-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-07-09T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-08-18T00:00:00.000000000",
+      "history_end": "2018-08-28T00:00:00.000000000",
+      "future_start": "2018-09-02T00:00:00.000000000",
+      "future_end": "2018-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-05-15T00:00:00.000000000",
+      "history_end": "2018-05-25T00:00:00.000000000",
+      "future_start": "2018-05-30T00:00:00.000000000",
+      "future_end": "2018-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-06-09T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-13T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-08-08T00:00:00.000000000",
+      "history_end": "2018-08-23T00:00:00.000000000",
+      "future_start": "2018-09-02T00:00:00.000000000",
+      "future_end": "2018-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-05-14T00:00:00.000000000",
+      "history_end": "2019-06-03T00:00:00.000000000",
+      "future_start": "2019-06-08T00:00:00.000000000",
+      "future_end": "2019-06-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-06-13T00:00:00.000000000",
+      "history_end": "2019-06-23T00:00:00.000000000",
+      "future_start": "2019-06-28T00:00:00.000000000",
+      "future_end": "2019-07-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-07-08T00:00:00.000000000",
+      "history_end": "2019-07-23T00:00:00.000000000",
+      "future_start": "2019-08-02T00:00:00.000000000",
+      "future_end": "2019-08-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-08-07T00:00:00.000000000",
+      "history_end": "2019-08-17T00:00:00.000000000",
+      "future_start": "2019-08-22T00:00:00.000000000",
+      "future_end": "2019-09-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-05-30T00:00:00.000000000",
+      "history_end": "2019-06-14T00:00:00.000000000",
+      "future_start": "2019-06-19T00:00:00.000000000",
+      "future_end": "2019-06-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-06-24T00:00:00.000000000",
+      "history_end": "2019-07-04T00:00:00.000000000",
+      "future_start": "2019-07-14T00:00:00.000000000",
+      "future_end": "2019-07-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-07-19T00:00:00.000000000",
+      "history_end": "2019-07-29T00:00:00.000000000",
+      "future_start": "2019-08-03T00:00:00.000000000",
+      "future_end": "2019-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-08-08T00:00:00.000000000",
+      "history_end": "2019-08-23T00:00:00.000000000",
+      "future_start": "2019-09-02T00:00:00.000000000",
+      "future_end": "2019-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-09-07T00:00:00.000000000",
+      "history_end": "2019-09-17T00:00:00.000000000",
+      "future_start": "2019-09-27T00:00:00.000000000",
+      "future_end": "2019-10-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-05-20T00:00:00.000000000",
+      "history_end": "2019-06-04T00:00:00.000000000",
+      "future_start": "2019-06-14T00:00:00.000000000",
+      "future_end": "2019-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-06-19T00:00:00.000000000",
+      "history_end": "2019-06-29T00:00:00.000000000",
+      "future_start": "2019-07-04T00:00:00.000000000",
+      "future_end": "2019-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-05-15T00:00:00.000000000",
+      "history_end": "2019-05-30T00:00:00.000000000",
+      "future_start": "2019-06-04T00:00:00.000000000",
+      "future_end": "2019-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-06-19T00:00:00.000000000",
+      "history_end": "2019-06-29T00:00:00.000000000",
+      "future_start": "2019-07-04T00:00:00.000000000",
+      "future_end": "2019-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-05-15T00:00:00.000000000",
+      "history_end": "2019-05-30T00:00:00.000000000",
+      "future_start": "2019-06-04T00:00:00.000000000",
+      "future_end": "2019-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-06-19T00:00:00.000000000",
+      "history_end": "2019-06-29T00:00:00.000000000",
+      "future_start": "2019-07-04T00:00:00.000000000",
+      "future_end": "2019-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-05-25T00:00:00.000000000",
+      "history_end": "2019-06-14T00:00:00.000000000",
+      "future_start": "2019-06-19T00:00:00.000000000",
+      "future_end": "2019-07-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-06-29T00:00:00.000000000",
+      "history_end": "2019-07-09T00:00:00.000000000",
+      "future_start": "2019-07-19T00:00:00.000000000",
+      "future_end": "2019-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-07-24T00:00:00.000000000",
+      "history_end": "2019-08-08T00:00:00.000000000",
+      "future_start": "2019-08-13T00:00:00.000000000",
+      "future_end": "2019-08-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-08-18T00:00:00.000000000",
+      "history_end": "2019-08-28T00:00:00.000000000",
+      "future_start": "2019-09-07T00:00:00.000000000",
+      "future_end": "2019-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2017-01-29T00:00:00.000000000",
+      "history_end": "2017-02-18T00:00:00.000000000",
+      "future_start": "2017-03-10T00:00:00.000000000",
+      "future_end": "2017-04-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-02-19T00:00:00.000000000",
+      "history_end": "2017-03-11T00:00:00.000000000",
+      "future_start": "2017-03-21T00:00:00.000000000",
+      "future_end": "2017-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-02-19T00:00:00.000000000",
+      "history_end": "2017-03-11T00:00:00.000000000",
+      "future_start": "2017-04-10T00:00:00.000000000",
+      "future_end": "2017-05-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-01-30T00:00:00.000000000",
+      "history_end": "2017-03-01T00:00:00.000000000",
+      "future_start": "2017-03-11T00:00:00.000000000",
+      "future_end": "2017-04-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-02-19T00:00:00.000000000",
+      "history_end": "2017-03-11T00:00:00.000000000",
+      "future_start": "2017-03-21T00:00:00.000000000",
+      "future_end": "2017-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-02-04T00:00:00.000000000",
+      "history_end": "2017-03-06T00:00:00.000000000",
+      "future_start": "2017-03-16T00:00:00.000000000",
+      "future_end": "2017-04-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-01-24T00:00:00.000000000",
+      "history_end": "2018-03-05T00:00:00.000000000",
+      "future_start": "2018-03-15T00:00:00.000000000",
+      "future_end": "2018-04-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-03-30T00:00:00.000000000",
+      "history_end": "2018-04-09T00:00:00.000000000",
+      "future_start": "2018-04-19T00:00:00.000000000",
+      "future_end": "2018-05-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-01-20T00:00:00.000000000",
+      "history_end": "2018-02-04T00:00:00.000000000",
+      "future_start": "2018-02-09T00:00:00.000000000",
+      "future_end": "2018-02-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-02-14T00:00:00.000000000",
+      "history_end": "2018-03-06T00:00:00.000000000",
+      "future_start": "2018-03-16T00:00:00.000000000",
+      "future_end": "2018-03-31T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-03-26T00:00:00.000000000",
+      "history_end": "2018-04-05T00:00:00.000000000",
+      "future_start": "2018-04-10T00:00:00.000000000",
+      "future_end": "2018-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-04-15T00:00:00.000000000",
+      "history_end": "2018-04-25T00:00:00.000000000",
+      "future_start": "2018-04-30T00:00:00.000000000",
+      "future_end": "2018-05-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-01-30T00:00:00.000000000",
+      "history_end": "2018-02-09T00:00:00.000000000",
+      "future_start": "2018-02-14T00:00:00.000000000",
+      "future_end": "2018-03-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-02-19T00:00:00.000000000",
+      "history_end": "2018-03-16T00:00:00.000000000",
+      "future_start": "2018-03-26T00:00:00.000000000",
+      "future_end": "2018-04-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-03-31T00:00:00.000000000",
+      "history_end": "2018-04-15T00:00:00.000000000",
+      "future_start": "2018-04-20T00:00:00.000000000",
+      "future_end": "2018-04-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-04-25T00:00:00.000000000",
+      "history_end": "2018-05-05T00:00:00.000000000",
+      "future_start": "2018-05-10T00:00:00.000000000",
+      "future_end": "2018-05-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-01-20T00:00:00.000000000",
+      "history_end": "2018-02-04T00:00:00.000000000",
+      "future_start": "2018-02-09T00:00:00.000000000",
+      "future_end": "2018-02-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-02-14T00:00:00.000000000",
+      "history_end": "2018-03-06T00:00:00.000000000",
+      "future_start": "2018-03-16T00:00:00.000000000",
+      "future_end": "2018-03-31T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-03-26T00:00:00.000000000",
+      "history_end": "2018-04-05T00:00:00.000000000",
+      "future_start": "2018-04-15T00:00:00.000000000",
+      "future_end": "2018-04-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-04-20T00:00:00.000000000",
+      "history_end": "2018-04-30T00:00:00.000000000",
+      "future_start": "2018-05-05T00:00:00.000000000",
+      "future_end": "2018-05-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-01-30T00:00:00.000000000",
+      "history_end": "2018-02-09T00:00:00.000000000",
+      "future_start": "2018-02-14T00:00:00.000000000",
+      "future_end": "2018-02-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-02-19T00:00:00.000000000",
+      "history_end": "2018-03-06T00:00:00.000000000",
+      "future_start": "2018-03-16T00:00:00.000000000",
+      "future_end": "2018-04-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-03-26T00:00:00.000000000",
+      "history_end": "2018-04-20T00:00:00.000000000",
+      "future_start": "2018-04-25T00:00:00.000000000",
+      "future_end": "2018-05-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-01-25T00:00:00.000000000",
+      "history_end": "2018-04-10T00:00:00.000000000",
+      "future_start": "2018-04-20T00:00:00.000000000",
+      "future_end": "2018-05-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-04-25T00:00:00.000000000",
+      "history_end": "2018-05-15T00:00:00.000000000",
+      "future_start": "2018-05-20T00:00:00.000000000",
+      "future_end": "2018-05-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-01-19T00:00:00.000000000",
+      "history_end": "2019-02-13T00:00:00.000000000",
+      "future_start": "2019-02-18T00:00:00.000000000",
+      "future_end": "2019-02-28T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-02-23T00:00:00.000000000",
+      "history_end": "2019-03-05T00:00:00.000000000",
+      "future_start": "2019-03-20T00:00:00.000000000",
+      "future_end": "2019-03-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-03-25T00:00:00.000000000",
+      "history_end": "2019-04-09T00:00:00.000000000",
+      "future_start": "2019-04-29T00:00:00.000000000",
+      "future_end": "2019-05-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-05-04T00:00:00.000000000",
+      "history_end": "2019-05-14T00:00:00.000000000",
+      "future_start": "2019-05-29T00:00:00.000000000",
+      "future_end": "2019-06-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-01-10T00:00:00.000000000",
+      "history_end": "2019-01-25T00:00:00.000000000",
+      "future_start": "2019-01-30T00:00:00.000000000",
+      "future_end": "2019-02-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-02-04T00:00:00.000000000",
+      "history_end": "2019-02-14T00:00:00.000000000",
+      "future_start": "2019-02-24T00:00:00.000000000",
+      "future_end": "2019-03-11T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-03-01T00:00:00.000000000",
+      "history_end": "2019-03-21T00:00:00.000000000",
+      "future_start": "2019-03-26T00:00:00.000000000",
+      "future_end": "2019-04-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-03-31T00:00:00.000000000",
+      "history_end": "2019-04-15T00:00:00.000000000",
+      "future_start": "2019-04-20T00:00:00.000000000",
+      "future_end": "2019-05-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-01-10T00:00:00.000000000",
+      "history_end": "2019-01-25T00:00:00.000000000",
+      "future_start": "2019-01-30T00:00:00.000000000",
+      "future_end": "2019-02-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-02-04T00:00:00.000000000",
+      "history_end": "2019-02-24T00:00:00.000000000",
+      "future_start": "2019-03-01T00:00:00.000000000",
+      "future_end": "2019-03-21T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-03-11T00:00:00.000000000",
+      "history_end": "2019-03-26T00:00:00.000000000",
+      "future_start": "2019-03-31T00:00:00.000000000",
+      "future_end": "2019-04-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-04-05T00:00:00.000000000",
+      "history_end": "2019-04-15T00:00:00.000000000",
+      "future_start": "2019-04-20T00:00:00.000000000",
+      "future_end": "2019-05-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-04-30T00:00:00.000000000",
+      "history_end": "2019-05-10T00:00:00.000000000",
+      "future_start": "2019-05-20T00:00:00.000000000",
+      "future_end": "2019-06-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-01-10T00:00:00.000000000",
+      "history_end": "2019-01-25T00:00:00.000000000",
+      "future_start": "2019-01-30T00:00:00.000000000",
+      "future_end": "2019-02-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-02-04T00:00:00.000000000",
+      "history_end": "2019-02-14T00:00:00.000000000",
+      "future_start": "2019-02-19T00:00:00.000000000",
+      "future_end": "2019-03-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-02-24T00:00:00.000000000",
+      "history_end": "2019-03-11T00:00:00.000000000",
+      "future_start": "2019-03-21T00:00:00.000000000",
+      "future_end": "2019-03-31T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-03-26T00:00:00.000000000",
+      "history_end": "2019-04-05T00:00:00.000000000",
+      "future_start": "2019-04-15T00:00:00.000000000",
+      "future_end": "2019-04-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-04-20T00:00:00.000000000",
+      "history_end": "2019-05-05T00:00:00.000000000",
+      "future_start": "2019-05-10T00:00:00.000000000",
+      "future_end": "2019-05-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-01-10T00:00:00.000000000",
+      "history_end": "2019-01-20T00:00:00.000000000",
+      "future_start": "2019-01-25T00:00:00.000000000",
+      "future_end": "2019-02-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-01-30T00:00:00.000000000",
+      "history_end": "2019-02-09T00:00:00.000000000",
+      "future_start": "2019-02-14T00:00:00.000000000",
+      "future_end": "2019-02-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-02-19T00:00:00.000000000",
+      "history_end": "2019-03-01T00:00:00.000000000",
+      "future_start": "2019-03-11T00:00:00.000000000",
+      "future_end": "2019-03-26T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-03-21T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-05T00:00:00.000000000",
+      "future_end": "2019-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-04-15T00:00:00.000000000",
+      "history_end": "2019-04-30T00:00:00.000000000",
+      "future_start": "2019-05-05T00:00:00.000000000",
+      "future_end": "2019-05-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-01-15T00:00:00.000000000",
+      "history_end": "2019-02-19T00:00:00.000000000",
+      "future_start": "2019-02-24T00:00:00.000000000",
+      "future_end": "2019-03-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-03-01T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-20T00:00:00.000000000",
+      "future_end": "2019-04-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2017-03-30T00:00:00.000000000",
+      "history_end": "2017-04-19T00:00:00.000000000",
+      "future_start": "2017-05-09T00:00:00.000000000",
+      "future_end": "2017-06-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-03-21T00:00:00.000000000",
+      "history_end": "2017-04-20T00:00:00.000000000",
+      "future_start": "2017-05-30T00:00:00.000000000",
+      "future_end": "2017-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-06-09T00:00:00.000000000",
+      "history_end": "2017-06-29T00:00:00.000000000",
+      "future_start": "2017-07-04T00:00:00.000000000",
+      "future_end": "2017-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-04-10T00:00:00.000000000",
+      "history_end": "2017-05-30T00:00:00.000000000",
+      "future_start": "2017-06-09T00:00:00.000000000",
+      "future_end": "2017-06-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-06-19T00:00:00.000000000",
+      "history_end": "2017-07-04T00:00:00.000000000",
+      "future_start": "2017-07-14T00:00:00.000000000",
+      "future_end": "2017-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-03-31T00:00:00.000000000",
+      "history_end": "2017-04-20T00:00:00.000000000",
+      "future_start": "2017-05-30T00:00:00.000000000",
+      "future_end": "2017-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-06-09T00:00:00.000000000",
+      "history_end": "2017-06-29T00:00:00.000000000",
+      "future_start": "2017-07-04T00:00:00.000000000",
+      "future_end": "2017-07-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-03-21T00:00:00.000000000",
+      "history_end": "2017-04-20T00:00:00.000000000",
+      "future_start": "2017-05-30T00:00:00.000000000",
+      "future_end": "2017-07-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-03-16T00:00:00.000000000",
+      "history_end": "2017-04-25T00:00:00.000000000",
+      "future_start": "2017-04-30T00:00:00.000000000",
+      "future_end": "2017-06-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-06-04T00:00:00.000000000",
+      "history_end": "2017-06-24T00:00:00.000000000",
+      "future_start": "2017-07-04T00:00:00.000000000",
+      "future_end": "2017-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-07-09T00:00:00.000000000",
+      "history_end": "2017-07-19T00:00:00.000000000",
+      "future_start": "2017-07-29T00:00:00.000000000",
+      "future_end": "2017-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-03-15T00:00:00.000000000",
+      "history_end": "2018-04-04T00:00:00.000000000",
+      "future_start": "2018-04-09T00:00:00.000000000",
+      "future_end": "2018-04-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-04-19T00:00:00.000000000",
+      "history_end": "2018-05-19T00:00:00.000000000",
+      "future_start": "2018-05-24T00:00:00.000000000",
+      "future_end": "2018-06-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-06-03T00:00:00.000000000",
+      "history_end": "2018-07-08T00:00:00.000000000",
+      "future_start": "2018-07-13T00:00:00.000000000",
+      "future_end": "2018-07-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-03-16T00:00:00.000000000",
+      "history_end": "2018-03-31T00:00:00.000000000",
+      "future_start": "2018-04-05T00:00:00.000000000",
+      "future_end": "2018-04-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-04-10T00:00:00.000000000",
+      "history_end": "2018-04-20T00:00:00.000000000",
+      "future_start": "2018-04-25T00:00:00.000000000",
+      "future_end": "2018-05-05T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-04-30T00:00:00.000000000",
+      "history_end": "2018-05-10T00:00:00.000000000",
+      "future_start": "2018-05-15T00:00:00.000000000",
+      "future_end": "2018-05-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-05-20T00:00:00.000000000",
+      "history_end": "2018-06-09T00:00:00.000000000",
+      "future_start": "2018-06-14T00:00:00.000000000",
+      "future_end": "2018-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-06-19T00:00:00.000000000",
+      "history_end": "2018-06-29T00:00:00.000000000",
+      "future_start": "2018-07-04T00:00:00.000000000",
+      "future_end": "2018-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-07-09T00:00:00.000000000",
+      "history_end": "2018-07-19T00:00:00.000000000",
+      "future_start": "2018-07-24T00:00:00.000000000",
+      "future_end": "2018-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-03-16T00:00:00.000000000",
+      "history_end": "2018-03-31T00:00:00.000000000",
+      "future_start": "2018-04-05T00:00:00.000000000",
+      "future_end": "2018-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-04-15T00:00:00.000000000",
+      "history_end": "2018-04-25T00:00:00.000000000",
+      "future_start": "2018-04-30T00:00:00.000000000",
+      "future_end": "2018-05-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-05-05T00:00:00.000000000",
+      "history_end": "2018-05-20T00:00:00.000000000",
+      "future_start": "2018-05-25T00:00:00.000000000",
+      "future_end": "2018-06-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-06-09T00:00:00.000000000",
+      "history_end": "2018-06-19T00:00:00.000000000",
+      "future_start": "2018-06-29T00:00:00.000000000",
+      "future_end": "2018-07-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-07-04T00:00:00.000000000",
+      "history_end": "2018-07-14T00:00:00.000000000",
+      "future_start": "2018-07-19T00:00:00.000000000",
+      "future_end": "2018-07-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-03-16T00:00:00.000000000",
+      "history_end": "2018-03-31T00:00:00.000000000",
+      "future_start": "2018-04-05T00:00:00.000000000",
+      "future_end": "2018-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-04-15T00:00:00.000000000",
+      "history_end": "2018-04-25T00:00:00.000000000",
+      "future_start": "2018-04-30T00:00:00.000000000",
+      "future_end": "2018-05-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-05-05T00:00:00.000000000",
+      "history_end": "2018-05-15T00:00:00.000000000",
+      "future_start": "2018-05-20T00:00:00.000000000",
+      "future_end": "2018-06-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-05-25T00:00:00.000000000",
+      "history_end": "2018-06-14T00:00:00.000000000",
+      "future_start": "2018-06-19T00:00:00.000000000",
+      "future_end": "2018-07-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-06-29T00:00:00.000000000",
+      "history_end": "2018-07-09T00:00:00.000000000",
+      "future_start": "2018-07-14T00:00:00.000000000",
+      "future_end": "2018-07-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-03-16T00:00:00.000000000",
+      "history_end": "2018-04-05T00:00:00.000000000",
+      "future_start": "2018-04-20T00:00:00.000000000",
+      "future_end": "2018-05-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-04-25T00:00:00.000000000",
+      "history_end": "2018-05-25T00:00:00.000000000",
+      "future_start": "2018-06-09T00:00:00.000000000",
+      "future_end": "2018-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-06-14T00:00:00.000000000",
+      "history_end": "2018-06-24T00:00:00.000000000",
+      "future_start": "2018-06-29T00:00:00.000000000",
+      "future_end": "2018-07-09T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-04-10T00:00:00.000000000",
+      "history_end": "2018-04-25T00:00:00.000000000",
+      "future_start": "2018-05-10T00:00:00.000000000",
+      "future_end": "2018-05-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-05-15T00:00:00.000000000",
+      "history_end": "2018-05-25T00:00:00.000000000",
+      "future_start": "2018-05-30T00:00:00.000000000",
+      "future_end": "2018-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-03-20T00:00:00.000000000",
+      "history_end": "2019-03-30T00:00:00.000000000",
+      "future_start": "2019-04-09T00:00:00.000000000",
+      "future_end": "2019-05-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-04-29T00:00:00.000000000",
+      "history_end": "2019-05-09T00:00:00.000000000",
+      "future_start": "2019-05-14T00:00:00.000000000",
+      "future_end": "2019-06-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-05-29T00:00:00.000000000",
+      "history_end": "2019-06-08T00:00:00.000000000",
+      "future_start": "2019-06-13T00:00:00.000000000",
+      "future_end": "2019-06-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-06-18T00:00:00.000000000",
+      "history_end": "2019-06-28T00:00:00.000000000",
+      "future_start": "2019-07-08T00:00:00.000000000",
+      "future_end": "2019-07-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-03-21T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-05T00:00:00.000000000",
+      "future_end": "2019-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-04-15T00:00:00.000000000",
+      "history_end": "2019-04-30T00:00:00.000000000",
+      "future_start": "2019-05-05T00:00:00.000000000",
+      "future_end": "2019-05-30T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-05-10T00:00:00.000000000",
+      "history_end": "2019-06-04T00:00:00.000000000",
+      "future_start": "2019-06-14T00:00:00.000000000",
+      "future_end": "2019-06-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-06-19T00:00:00.000000000",
+      "history_end": "2019-06-29T00:00:00.000000000",
+      "future_start": "2019-07-04T00:00:00.000000000",
+      "future_end": "2019-07-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-03-21T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-05T00:00:00.000000000",
+      "future_end": "2019-04-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-04-10T00:00:00.000000000",
+      "history_end": "2019-04-20T00:00:00.000000000",
+      "future_start": "2019-04-30T00:00:00.000000000",
+      "future_end": "2019-05-10T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-05-05T00:00:00.000000000",
+      "history_end": "2019-05-20T00:00:00.000000000",
+      "future_start": "2019-05-30T00:00:00.000000000",
+      "future_end": "2019-06-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-06-04T00:00:00.000000000",
+      "history_end": "2019-06-19T00:00:00.000000000",
+      "future_start": "2019-06-24T00:00:00.000000000",
+      "future_end": "2019-07-04T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-06-29T00:00:00.000000000",
+      "history_end": "2019-07-14T00:00:00.000000000",
+      "future_start": "2019-07-19T00:00:00.000000000",
+      "future_end": "2019-07-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-03-21T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-05T00:00:00.000000000",
+      "future_end": "2019-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-04-15T00:00:00.000000000",
+      "history_end": "2019-04-30T00:00:00.000000000",
+      "future_start": "2019-05-05T00:00:00.000000000",
+      "future_end": "2019-05-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-05-10T00:00:00.000000000",
+      "history_end": "2019-05-25T00:00:00.000000000",
+      "future_start": "2019-05-30T00:00:00.000000000",
+      "future_end": "2019-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-06-04T00:00:00.000000000",
+      "history_end": "2019-06-24T00:00:00.000000000",
+      "future_start": "2019-06-29T00:00:00.000000000",
+      "future_end": "2019-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-07-04T00:00:00.000000000",
+      "history_end": "2019-07-19T00:00:00.000000000",
+      "future_start": "2019-07-24T00:00:00.000000000",
+      "future_end": "2019-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-03-21T00:00:00.000000000",
+      "history_end": "2019-03-31T00:00:00.000000000",
+      "future_start": "2019-04-05T00:00:00.000000000",
+      "future_end": "2019-04-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-04-15T00:00:00.000000000",
+      "history_end": "2019-04-30T00:00:00.000000000",
+      "future_start": "2019-05-05T00:00:00.000000000",
+      "future_end": "2019-05-15T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-05-10T00:00:00.000000000",
+      "history_end": "2019-05-25T00:00:00.000000000",
+      "future_start": "2019-05-30T00:00:00.000000000",
+      "future_end": "2019-06-19T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-06-04T00:00:00.000000000",
+      "history_end": "2019-06-24T00:00:00.000000000",
+      "future_start": "2019-06-29T00:00:00.000000000",
+      "future_end": "2019-07-14T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-07-04T00:00:00.000000000",
+      "history_end": "2019-07-19T00:00:00.000000000",
+      "future_start": "2019-07-24T00:00:00.000000000",
+      "future_end": "2019-08-03T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-03-31T00:00:00.000000000",
+      "history_end": "2019-04-25T00:00:00.000000000",
+      "future_start": "2019-04-30T00:00:00.000000000",
+      "future_end": "2019-05-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-05-10T00:00:00.000000000",
+      "history_end": "2019-06-09T00:00:00.000000000",
+      "future_start": "2019-06-14T00:00:00.000000000",
+      "future_end": "2019-06-29T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-06-19T00:00:00.000000000",
+      "history_end": "2019-07-04T00:00:00.000000000",
+      "future_start": "2019-07-09T00:00:00.000000000",
+      "future_end": "2019-07-24T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2017-07-18T00:00:00.000000000",
+      "history_end": "2017-08-07T00:00:00.000000000",
+      "future_start": "2017-08-12T00:00:00.000000000",
+      "future_end": "2017-09-26T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2017-08-17T00:00:00.000000000",
+      "history_end": "2017-10-16T00:00:00.000000000",
+      "future_start": "2017-10-26T00:00:00.000000000",
+      "future_end": "2017-11-20T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-07-14T00:00:00.000000000",
+      "history_end": "2017-08-03T00:00:00.000000000",
+      "future_start": "2017-08-13T00:00:00.000000000",
+      "future_end": "2017-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-08-18T00:00:00.000000000",
+      "history_end": "2017-09-07T00:00:00.000000000",
+      "future_start": "2017-09-12T00:00:00.000000000",
+      "future_end": "2017-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-09-22T00:00:00.000000000",
+      "history_end": "2017-10-02T00:00:00.000000000",
+      "future_start": "2017-10-07T00:00:00.000000000",
+      "future_end": "2017-10-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-10-12T00:00:00.000000000",
+      "history_end": "2017-10-22T00:00:00.000000000",
+      "future_start": "2017-10-27T00:00:00.000000000",
+      "future_end": "2017-11-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2017-11-06T00:00:00.000000000",
+      "history_end": "2017-11-21T00:00:00.000000000",
+      "future_start": "2017-11-26T00:00:00.000000000",
+      "future_end": "2017-12-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-07-14T00:00:00.000000000",
+      "history_end": "2017-08-03T00:00:00.000000000",
+      "future_start": "2017-08-13T00:00:00.000000000",
+      "future_end": "2017-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-08-18T00:00:00.000000000",
+      "history_end": "2017-09-07T00:00:00.000000000",
+      "future_start": "2017-09-12T00:00:00.000000000",
+      "future_end": "2017-09-22T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-09-17T00:00:00.000000000",
+      "history_end": "2017-09-27T00:00:00.000000000",
+      "future_start": "2017-10-07T00:00:00.000000000",
+      "future_end": "2017-10-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2017-10-12T00:00:00.000000000",
+      "history_end": "2017-10-22T00:00:00.000000000",
+      "future_start": "2017-10-27T00:00:00.000000000",
+      "future_end": "2017-11-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-07-14T00:00:00.000000000",
+      "history_end": "2017-07-29T00:00:00.000000000",
+      "future_start": "2017-08-03T00:00:00.000000000",
+      "future_end": "2017-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-08-13T00:00:00.000000000",
+      "history_end": "2017-08-23T00:00:00.000000000",
+      "future_start": "2017-09-02T00:00:00.000000000",
+      "future_end": "2017-09-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-09-07T00:00:00.000000000",
+      "history_end": "2017-09-17T00:00:00.000000000",
+      "future_start": "2017-09-22T00:00:00.000000000",
+      "future_end": "2017-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-09-27T00:00:00.000000000",
+      "history_end": "2017-10-07T00:00:00.000000000",
+      "future_start": "2017-10-12T00:00:00.000000000",
+      "future_end": "2017-10-22T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2017-10-17T00:00:00.000000000",
+      "history_end": "2017-10-27T00:00:00.000000000",
+      "future_start": "2017-11-01T00:00:00.000000000",
+      "future_end": "2017-11-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-07-14T00:00:00.000000000",
+      "history_end": "2017-07-29T00:00:00.000000000",
+      "future_start": "2017-08-18T00:00:00.000000000",
+      "future_end": "2017-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-08-23T00:00:00.000000000",
+      "history_end": "2017-09-07T00:00:00.000000000",
+      "future_start": "2017-09-12T00:00:00.000000000",
+      "future_end": "2017-09-22T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-09-17T00:00:00.000000000",
+      "history_end": "2017-10-07T00:00:00.000000000",
+      "future_start": "2017-10-12T00:00:00.000000000",
+      "future_end": "2017-10-22T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2017-10-17T00:00:00.000000000",
+      "history_end": "2017-10-27T00:00:00.000000000",
+      "future_start": "2017-11-01T00:00:00.000000000",
+      "future_end": "2017-11-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-07-14T00:00:00.000000000",
+      "history_end": "2017-07-29T00:00:00.000000000",
+      "future_start": "2017-08-03T00:00:00.000000000",
+      "future_end": "2017-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-08-08T00:00:00.000000000",
+      "history_end": "2017-08-23T00:00:00.000000000",
+      "future_start": "2017-08-28T00:00:00.000000000",
+      "future_end": "2017-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2017-09-02T00:00:00.000000000",
+      "history_end": "2017-09-22T00:00:00.000000000",
+      "future_start": "2017-10-02T00:00:00.000000000",
+      "future_end": "2017-10-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-07-13T00:00:00.000000000",
+      "history_end": "2018-07-23T00:00:00.000000000",
+      "future_start": "2018-08-02T00:00:00.000000000",
+      "future_end": "2018-08-12T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-08-07T00:00:00.000000000",
+      "history_end": "2018-08-22T00:00:00.000000000",
+      "future_start": "2018-08-27T00:00:00.000000000",
+      "future_end": "2018-09-11T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-09-01T00:00:00.000000000",
+      "history_end": "2018-09-16T00:00:00.000000000",
+      "future_start": "2018-09-21T00:00:00.000000000",
+      "future_end": "2018-10-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2018-09-26T00:00:00.000000000",
+      "history_end": "2018-10-21T00:00:00.000000000",
+      "future_start": "2018-11-10T00:00:00.000000000",
+      "future_end": "2018-11-25T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-07-14T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-08-03T00:00:00.000000000",
+      "history_end": "2018-08-13T00:00:00.000000000",
+      "future_start": "2018-08-18T00:00:00.000000000",
+      "future_end": "2018-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-08-23T00:00:00.000000000",
+      "history_end": "2018-09-07T00:00:00.000000000",
+      "future_start": "2018-09-12T00:00:00.000000000",
+      "future_end": "2018-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-09-17T00:00:00.000000000",
+      "history_end": "2018-10-02T00:00:00.000000000",
+      "future_start": "2018-10-07T00:00:00.000000000",
+      "future_end": "2018-10-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2018-10-12T00:00:00.000000000",
+      "history_end": "2018-10-22T00:00:00.000000000",
+      "future_start": "2018-11-16T00:00:00.000000000",
+      "future_end": "2018-12-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-07-14T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-08-03T00:00:00.000000000",
+      "history_end": "2018-08-13T00:00:00.000000000",
+      "future_start": "2018-08-23T00:00:00.000000000",
+      "future_end": "2018-09-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-08-28T00:00:00.000000000",
+      "history_end": "2018-09-07T00:00:00.000000000",
+      "future_start": "2018-09-17T00:00:00.000000000",
+      "future_end": "2018-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2018-09-27T00:00:00.000000000",
+      "history_end": "2018-10-22T00:00:00.000000000",
+      "future_start": "2018-11-16T00:00:00.000000000",
+      "future_end": "2018-12-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-07-14T00:00:00.000000000",
+      "history_end": "2018-07-24T00:00:00.000000000",
+      "future_start": "2018-07-29T00:00:00.000000000",
+      "future_end": "2018-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-08-03T00:00:00.000000000",
+      "history_end": "2018-08-13T00:00:00.000000000",
+      "future_start": "2018-08-18T00:00:00.000000000",
+      "future_end": "2018-08-28T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-08-23T00:00:00.000000000",
+      "history_end": "2018-09-02T00:00:00.000000000",
+      "future_start": "2018-09-07T00:00:00.000000000",
+      "future_end": "2018-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2018-09-17T00:00:00.000000000",
+      "history_end": "2018-10-02T00:00:00.000000000",
+      "future_start": "2018-10-12T00:00:00.000000000",
+      "future_end": "2018-12-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-07-19T00:00:00.000000000",
+      "history_end": "2018-07-29T00:00:00.000000000",
+      "future_start": "2018-08-18T00:00:00.000000000",
+      "future_end": "2018-08-28T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-08-23T00:00:00.000000000",
+      "history_end": "2018-09-02T00:00:00.000000000",
+      "future_start": "2018-09-07T00:00:00.000000000",
+      "future_end": "2018-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2018-09-12T00:00:00.000000000",
+      "history_end": "2018-10-02T00:00:00.000000000",
+      "future_start": "2018-10-12T00:00:00.000000000",
+      "future_end": "2018-12-01T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-07-14T00:00:00.000000000",
+      "history_end": "2018-07-29T00:00:00.000000000",
+      "future_start": "2018-08-08T00:00:00.000000000",
+      "future_end": "2018-08-23T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-08-13T00:00:00.000000000",
+      "history_end": "2018-09-02T00:00:00.000000000",
+      "future_start": "2018-09-07T00:00:00.000000000",
+      "future_end": "2018-09-27T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-09-12T00:00:00.000000000",
+      "history_end": "2018-10-02T00:00:00.000000000",
+      "future_start": "2018-10-07T00:00:00.000000000",
+      "future_end": "2018-10-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2018-10-12T00:00:00.000000000",
+      "history_end": "2018-10-27T00:00:00.000000000",
+      "future_start": "2018-11-06T00:00:00.000000000",
+      "future_end": "2018-11-16T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-07-18T00:00:00.000000000",
+      "history_end": "2019-08-02T00:00:00.000000000",
+      "future_start": "2019-08-07T00:00:00.000000000",
+      "future_end": "2019-08-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-08-12T00:00:00.000000000",
+      "history_end": "2019-08-22T00:00:00.000000000",
+      "future_start": "2019-09-01T00:00:00.000000000",
+      "future_end": "2019-09-11T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_135_43.75_-1.25.csv",
+      "history_start": "2019-09-06T00:00:00.000000000",
+      "history_end": "2019-09-16T00:00:00.000000000",
+      "future_start": "2019-09-26T00:00:00.000000000",
+      "future_end": "2019-10-26T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_136_43.75_5.05.csv",
+      "history_start": "2019-09-27T00:00:00.000000000",
+      "history_end": "2019-10-07T00:00:00.000000000",
+      "future_start": "2019-10-27T00:00:00.000000000",
+      "future_end": "2019-11-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_137_43.75_5.55.csv",
+      "history_start": "2019-09-27T00:00:00.000000000",
+      "history_end": "2019-10-17T00:00:00.000000000",
+      "future_start": "2019-10-27T00:00:00.000000000",
+      "future_end": "2019-11-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-09-27T00:00:00.000000000",
+      "history_end": "2019-10-07T00:00:00.000000000",
+      "future_start": "2019-10-17T00:00:00.000000000",
+      "future_end": "2019-11-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_138_43.75_6.05.csv",
+      "history_start": "2019-10-27T00:00:00.000000000",
+      "history_end": "2019-11-16T00:00:00.000000000",
+      "future_start": "2019-11-26T00:00:00.000000000",
+      "future_end": "2019-12-06T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-07-14T00:00:00.000000000",
+      "history_end": "2019-07-24T00:00:00.000000000",
+      "future_start": "2019-07-29T00:00:00.000000000",
+      "future_end": "2019-08-08T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-08-03T00:00:00.000000000",
+      "history_end": "2019-08-18T00:00:00.000000000",
+      "future_start": "2019-08-23T00:00:00.000000000",
+      "future_end": "2019-09-07T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_139_43.75_6.55.csv",
+      "history_start": "2019-09-02T00:00:00.000000000",
+      "history_end": "2019-09-12T00:00:00.000000000",
+      "future_start": "2019-09-17T00:00:00.000000000",
+      "future_end": "2019-10-02T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-07-19T00:00:00.000000000",
+      "history_end": "2019-08-03T00:00:00.000000000",
+      "future_start": "2019-08-08T00:00:00.000000000",
+      "future_end": "2019-08-18T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-08-13T00:00:00.000000000",
+      "history_end": "2019-08-23T00:00:00.000000000",
+      "future_start": "2019-08-28T00:00:00.000000000",
+      "future_end": "2019-09-17T00:00:00.000000000",
+      "climate": "unknown"
+    },
+    {
+      "area": "43.75",
+      "csv": "minicube_141_43.75_18.55.csv",
+      "history_start": "2019-09-07T00:00:00.000000000",
+      "history_end": "2019-09-27T00:00:00.000000000",
+      "future_start": "2019-10-07T00:00:00.000000000",
+      "future_end": "2019-10-17T00:00:00.000000000",
+      "climate": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "area": "32TPS",
+  "feature_names": [
+    "wind",
+    "humidity",
+    "solar_irradiance",
+    "rainfall",
+    "pressure",
+    "avg_temperature",
+    "min_temperature",
+    "max_temperature",
+    "thick_clouds",
+    "thin_clouds",
+    "clouds_shadows",
+    "day_of_year",
+    "day_of_year_fourier_sin_1",
+    "day_of_year_fourier_cos_1",
+    "day_of_year_fourier_sin_2",
+    "day_of_year_fourier_cos_2",
+    "day_of_year_fourier_sin_3",
+    "day_of_year_fourier_cos_3",
+    "target_history_avg_NDVI_clear_sky",
+    "target_history_avg_GNDVI_clear_sky",
+    "target_history_avg_EVI_clear_sky"
+  ],
+  "target_names": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "target_column": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "history_window": 3,
+  "forecast_window": 3,
+  "step": 4,
+  "noise_percentage": 0.1,
+  "scaler_mode": "standardization_arcsinh",
+  "min_samples_per_month": 100,
+  "g5_target": 2.0,
+  "metadata_records": [
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-05-23T00:00:00.000000000",
+      "history_end": "2020-06-12T00:00:00.000000000",
+      "future_start": "2020-06-22T00:00:00.000000000",
+      "future_end": "2020-07-02T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-06-27T00:00:00.000000000",
+      "history_end": "2020-07-07T00:00:00.000000000",
+      "future_start": "2020-07-12T00:00:00.000000000",
+      "future_end": "2020-08-01T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-07-27T00:00:00.000000000",
+      "history_end": "2020-08-06T00:00:00.000000000",
+      "future_start": "2020-08-11T00:00:00.000000000",
+      "future_end": "2020-09-05T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-05-18T00:00:00.000000000",
+      "history_end": "2020-05-28T00:00:00.000000000",
+      "future_start": "2020-06-02T00:00:00.000000000",
+      "future_end": "2020-06-22T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-06-12T00:00:00.000000000",
+      "history_end": "2020-06-27T00:00:00.000000000",
+      "future_start": "2020-07-07T00:00:00.000000000",
+      "future_end": "2020-07-22T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-07-12T00:00:00.000000000",
+      "history_end": "2020-07-27T00:00:00.000000000",
+      "future_start": "2020-08-01T00:00:00.000000000",
+      "future_end": "2020-08-11T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-08-06T00:00:00.000000000",
+      "history_end": "2020-08-21T00:00:00.000000000",
+      "future_start": "2020-08-26T00:00:00.000000000",
+      "future_end": "2020-09-10T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-01-14T00:00:00.000000000",
+      "history_end": "2020-01-24T00:00:00.000000000",
+      "future_start": "2020-01-29T00:00:00.000000000",
+      "future_end": "2020-02-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-02-03T00:00:00.000000000",
+      "history_end": "2020-02-13T00:00:00.000000000",
+      "future_start": "2020-02-18T00:00:00.000000000",
+      "future_end": "2020-03-04T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-02-28T00:00:00.000000000",
+      "history_end": "2020-03-19T00:00:00.000000000",
+      "future_start": "2020-03-24T00:00:00.000000000",
+      "future_end": "2020-04-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-04-03T00:00:00.000000000",
+      "history_end": "2020-04-13T00:00:00.000000000",
+      "future_start": "2020-04-18T00:00:00.000000000",
+      "future_end": "2020-05-03T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-01-14T00:00:00.000000000",
+      "history_end": "2020-01-24T00:00:00.000000000",
+      "future_start": "2020-01-29T00:00:00.000000000",
+      "future_end": "2020-02-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-02-03T00:00:00.000000000",
+      "history_end": "2020-02-13T00:00:00.000000000",
+      "future_start": "2020-02-18T00:00:00.000000000",
+      "future_end": "2020-02-28T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-02-23T00:00:00.000000000",
+      "history_end": "2020-03-04T00:00:00.000000000",
+      "future_start": "2020-03-09T00:00:00.000000000",
+      "future_end": "2020-03-24T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-03-19T00:00:00.000000000",
+      "history_end": "2020-03-29T00:00:00.000000000",
+      "future_start": "2020-04-03T00:00:00.000000000",
+      "future_end": "2020-04-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-04-08T00:00:00.000000000",
+      "history_end": "2020-05-03T00:00:00.000000000",
+      "future_start": "2020-05-08T00:00:00.000000000",
+      "future_end": "2020-05-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-03-19T00:00:00.000000000",
+      "history_end": "2020-04-03T00:00:00.000000000",
+      "future_start": "2020-04-08T00:00:00.000000000",
+      "future_end": "2020-04-18T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-04-13T00:00:00.000000000",
+      "history_end": "2020-04-23T00:00:00.000000000",
+      "future_start": "2020-05-03T00:00:00.000000000",
+      "future_end": "2020-05-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-05-08T00:00:00.000000000",
+      "history_end": "2020-06-02T00:00:00.000000000",
+      "future_start": "2020-06-12T00:00:00.000000000",
+      "future_end": "2020-06-27T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-06-22T00:00:00.000000000",
+      "history_end": "2020-07-02T00:00:00.000000000",
+      "future_start": "2020-07-07T00:00:00.000000000",
+      "future_end": "2020-07-27T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-03-19T00:00:00.000000000",
+      "history_end": "2020-03-29T00:00:00.000000000",
+      "future_start": "2020-04-03T00:00:00.000000000",
+      "future_end": "2020-04-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-04-08T00:00:00.000000000",
+      "history_end": "2020-05-03T00:00:00.000000000",
+      "future_start": "2020-05-08T00:00:00.000000000",
+      "future_end": "2020-05-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-05-18T00:00:00.000000000",
+      "history_end": "2020-05-28T00:00:00.000000000",
+      "future_start": "2020-06-02T00:00:00.000000000",
+      "future_end": "2020-06-22T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-06-12T00:00:00.000000000",
+      "history_end": "2020-06-27T00:00:00.000000000",
+      "future_start": "2020-07-07T00:00:00.000000000",
+      "future_end": "2020-07-22T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-07-27T00:00:00.000000000",
+      "history_end": "2020-08-06T00:00:00.000000000",
+      "future_start": "2020-08-11T00:00:00.000000000",
+      "future_end": "2020-09-05T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-08-21T00:00:00.000000000",
+      "history_end": "2020-09-10T00:00:00.000000000",
+      "future_start": "2020-09-20T00:00:00.000000000",
+      "future_end": "2020-10-10T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_104_32TPS_46.09_10.99.csv",
+      "history_start": "2020-09-30T00:00:00.000000000",
+      "history_end": "2020-10-30T00:00:00.000000000",
+      "future_start": "2020-11-09T00:00:00.000000000",
+      "future_end": "2020-11-19T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-07-22T00:00:00.000000000",
+      "history_end": "2020-08-01T00:00:00.000000000",
+      "future_start": "2020-08-06T00:00:00.000000000",
+      "future_end": "2020-08-21T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-08-11T00:00:00.000000000",
+      "history_end": "2020-08-26T00:00:00.000000000",
+      "future_start": "2020-09-05T00:00:00.000000000",
+      "future_end": "2020-09-15T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-09-10T00:00:00.000000000",
+      "history_end": "2020-09-20T00:00:00.000000000",
+      "future_start": "2020-09-30T00:00:00.000000000",
+      "future_end": "2020-10-20T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "32TPS",
+      "csv": "minicube_106_32TPS_46.17_11.16.csv",
+      "history_start": "2020-10-10T00:00:00.000000000",
+      "history_end": "2020-10-30T00:00:00.000000000",
+      "future_start": "2020-11-04T00:00:00.000000000",
+      "future_end": "2020-11-14T00:00:00.000000000",
+      "climate": "Dfb"
+    }
+  ]
+}

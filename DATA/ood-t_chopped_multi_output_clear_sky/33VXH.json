@@ -1,0 +1,360 @@
+{
+  "area": "33VXH",
+  "feature_names": [
+    "wind",
+    "humidity",
+    "solar_irradiance",
+    "rainfall",
+    "pressure",
+    "avg_temperature",
+    "min_temperature",
+    "max_temperature",
+    "thick_clouds",
+    "thin_clouds",
+    "clouds_shadows",
+    "day_of_year",
+    "day_of_year_fourier_sin_1",
+    "day_of_year_fourier_cos_1",
+    "day_of_year_fourier_sin_2",
+    "day_of_year_fourier_cos_2",
+    "day_of_year_fourier_sin_3",
+    "day_of_year_fourier_cos_3",
+    "target_history_avg_NDVI_clear_sky",
+    "target_history_avg_GNDVI_clear_sky",
+    "target_history_avg_EVI_clear_sky"
+  ],
+  "target_names": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "target_column": [
+    "avg_NDVI_clear_sky",
+    "avg_GNDVI_clear_sky",
+    "avg_EVI_clear_sky"
+  ],
+  "history_window": 3,
+  "forecast_window": 3,
+  "step": 4,
+  "noise_percentage": 0.1,
+  "scaler_mode": "standardization_arcsinh",
+  "min_samples_per_month": 100,
+  "g5_target": 2.0,
+  "metadata_records": [
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-05-13T00:00:00.000000000",
+      "history_end": "2021-06-02T00:00:00.000000000",
+      "future_start": "2021-06-17T00:00:00.000000000",
+      "future_end": "2021-07-12T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-07-02T00:00:00.000000000",
+      "history_end": "2021-07-17T00:00:00.000000000",
+      "future_start": "2021-07-22T00:00:00.000000000",
+      "future_end": "2021-08-06T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-05-13T00:00:00.000000000",
+      "history_end": "2021-05-28T00:00:00.000000000",
+      "future_start": "2021-06-02T00:00:00.000000000",
+      "future_end": "2021-07-02T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-06-17T00:00:00.000000000",
+      "history_end": "2021-07-12T00:00:00.000000000",
+      "future_start": "2021-07-22T00:00:00.000000000",
+      "future_end": "2021-08-06T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-05-13T00:00:00.000000000",
+      "history_end": "2022-05-23T00:00:00.000000000",
+      "future_start": "2022-06-07T00:00:00.000000000",
+      "future_end": "2022-06-27T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-06-12T00:00:00.000000000",
+      "history_end": "2022-07-12T00:00:00.000000000",
+      "future_start": "2022-08-16T00:00:00.000000000",
+      "future_end": "2022-09-10T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-05-18T00:00:00.000000000",
+      "history_end": "2022-06-27T00:00:00.000000000",
+      "future_start": "2022-07-12T00:00:00.000000000",
+      "future_end": "2022-08-16T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-07-17T00:00:00.000000000",
+      "history_end": "2022-08-31T00:00:00.000000000",
+      "future_start": "2022-09-05T00:00:00.000000000",
+      "future_end": "2022-09-15T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-02-07T00:00:00.000000000",
+      "history_end": "2021-02-17T00:00:00.000000000",
+      "future_start": "2021-03-04T00:00:00.000000000",
+      "future_end": "2021-04-03T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-03-19T00:00:00.000000000",
+      "history_end": "2021-04-08T00:00:00.000000000",
+      "future_start": "2021-04-18T00:00:00.000000000",
+      "future_end": "2021-04-28T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-04-23T00:00:00.000000000",
+      "history_end": "2021-05-03T00:00:00.000000000",
+      "future_start": "2021-05-13T00:00:00.000000000",
+      "future_end": "2021-06-02T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-02-07T00:00:00.000000000",
+      "history_end": "2021-03-04T00:00:00.000000000",
+      "future_start": "2021-03-19T00:00:00.000000000",
+      "future_end": "2021-04-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-03-24T00:00:00.000000000",
+      "history_end": "2021-04-18T00:00:00.000000000",
+      "future_start": "2021-04-23T00:00:00.000000000",
+      "future_end": "2021-05-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-05-03T00:00:00.000000000",
+      "history_end": "2021-05-13T00:00:00.000000000",
+      "future_start": "2021-05-18T00:00:00.000000000",
+      "future_end": "2021-06-02T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-01-13T00:00:00.000000000",
+      "history_end": "2022-01-28T00:00:00.000000000",
+      "future_start": "2022-02-07T00:00:00.000000000",
+      "future_end": "2022-03-04T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-02-22T00:00:00.000000000",
+      "history_end": "2022-03-14T00:00:00.000000000",
+      "future_start": "2022-04-03T00:00:00.000000000",
+      "future_end": "2022-04-23T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-04-18T00:00:00.000000000",
+      "history_end": "2022-05-03T00:00:00.000000000",
+      "future_start": "2022-05-08T00:00:00.000000000",
+      "future_end": "2022-05-18T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-01-13T00:00:00.000000000",
+      "history_end": "2022-02-07T00:00:00.000000000",
+      "future_start": "2022-02-22T00:00:00.000000000",
+      "future_end": "2022-03-04T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-02-27T00:00:00.000000000",
+      "history_end": "2022-03-09T00:00:00.000000000",
+      "future_start": "2022-03-14T00:00:00.000000000",
+      "future_end": "2022-04-03T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-03-24T00:00:00.000000000",
+      "history_end": "2022-04-18T00:00:00.000000000",
+      "future_start": "2022-04-23T00:00:00.000000000",
+      "future_end": "2022-05-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-03-19T00:00:00.000000000",
+      "history_end": "2021-04-08T00:00:00.000000000",
+      "future_start": "2021-04-18T00:00:00.000000000",
+      "future_end": "2021-04-28T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-04-23T00:00:00.000000000",
+      "history_end": "2021-05-03T00:00:00.000000000",
+      "future_start": "2021-05-13T00:00:00.000000000",
+      "future_end": "2021-06-02T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-05-28T00:00:00.000000000",
+      "history_end": "2021-06-17T00:00:00.000000000",
+      "future_start": "2021-07-02T00:00:00.000000000",
+      "future_end": "2021-07-17T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-03-19T00:00:00.000000000",
+      "history_end": "2021-04-08T00:00:00.000000000",
+      "future_start": "2021-04-18T00:00:00.000000000",
+      "future_end": "2021-05-03T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-04-23T00:00:00.000000000",
+      "history_end": "2021-05-08T00:00:00.000000000",
+      "future_start": "2021-05-13T00:00:00.000000000",
+      "future_end": "2021-05-28T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-05-18T00:00:00.000000000",
+      "history_end": "2021-06-02T00:00:00.000000000",
+      "future_start": "2021-06-17T00:00:00.000000000",
+      "future_end": "2021-07-12T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-03-14T00:00:00.000000000",
+      "history_end": "2022-04-18T00:00:00.000000000",
+      "future_start": "2022-04-23T00:00:00.000000000",
+      "future_end": "2022-05-08T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-05-03T00:00:00.000000000",
+      "history_end": "2022-05-13T00:00:00.000000000",
+      "future_start": "2022-05-18T00:00:00.000000000",
+      "future_end": "2022-06-07T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-03-14T00:00:00.000000000",
+      "history_end": "2022-04-03T00:00:00.000000000",
+      "future_start": "2022-04-18T00:00:00.000000000",
+      "future_end": "2022-04-28T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-04-23T00:00:00.000000000",
+      "history_end": "2022-05-08T00:00:00.000000000",
+      "future_start": "2022-05-18T00:00:00.000000000",
+      "future_end": "2022-06-27T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2021-07-17T00:00:00.000000000",
+      "history_end": "2021-07-27T00:00:00.000000000",
+      "future_start": "2021-08-06T00:00:00.000000000",
+      "future_end": "2021-09-05T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2021-07-22T00:00:00.000000000",
+      "history_end": "2021-08-06T00:00:00.000000000",
+      "future_start": "2021-08-31T00:00:00.000000000",
+      "future_end": "2021-09-25T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_194_33VXH_60.88_17.08.csv",
+      "history_start": "2022-08-16T00:00:00.000000000",
+      "history_end": "2022-09-10T00:00:00.000000000",
+      "future_start": "2022-09-20T00:00:00.000000000",
+      "future_end": "2022-10-20T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-07-17T00:00:00.000000000",
+      "history_end": "2022-08-31T00:00:00.000000000",
+      "future_start": "2022-09-05T00:00:00.000000000",
+      "future_end": "2022-09-15T00:00:00.000000000",
+      "climate": "Dfb"
+    },
+    {
+      "area": "33VXH",
+      "csv": "minicube_196_33VXH_60.40_16.91.csv",
+      "history_start": "2022-09-10T00:00:00.000000000",
+      "history_end": "2022-09-25T00:00:00.000000000",
+      "future_start": "2022-09-30T00:00:00.000000000",
+      "future_end": "2022-10-30T00:00:00.000000000",
+      "climate": "Dfb"
+    }
+  ]
+}
